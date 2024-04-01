@@ -1,4 +1,4 @@
-import { Directive, ElementRef, OnInit, Renderer2,Input, HostListener } from '@angular/core';
+import { Directive, ElementRef, Renderer2,Input, } from '@angular/core';
 
 @Directive({
   selector: '[appBlogDirective]',
@@ -10,16 +10,6 @@ export class BlogDirectiveDirective {
 
   constructor(private _element:ElementRef,private renderer:Renderer2) { }
  
-    @HostListener('mouseenter') onMouseEnter() {
-    this.highlight("red")
-  }
-  @HostListener('mouseleave') onMouseLeave() {
-    this.highlight("")
-  }
-
-  private highlight(color:string){
-   this._element.nativeElement.color=color;
-  }
 
   ngOnInit() {
     this.renderer.setStyle(this._element.nativeElement, 'color', this.color);
