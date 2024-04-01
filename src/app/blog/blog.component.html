@@ -1,0 +1,62 @@
+<div class="conatiner">
+    <div class="header">
+        <img src="../assets/images/logo.jpeg" alt="" class="img1">
+    <h1 appBlogDirective="green">The Travel star</h1> 
+   </div>
+   <div class="navbar" appNavbar>
+    <ul>
+        <li>ABOUT ME</li>
+        <li>MY TRAVELS</li>
+        <li>SUSTAINABLE TOURISM</li>
+        <li>MY COURSE</li>
+        <li>MY BOOK</li>
+    </ul>
+   </div>
+   <hr>
+  
+   <div class="blog">
+    <h3 appBlogDirective="darkred">Goa</h3>
+    <img src="../assets/images/Unknown.jpeg" alt="" class="img2">
+   
+    <p id="desc">On my first trip to Goa as an adult, my partner and I stayed at an “offbeat” beach that had already been invaded by overtourism. That experience, filled with characterless beach shacks, multicuisine food and hordes of tourists, turned me off Goa.
+
+        Much later, I returned to experience slow travel for the first time.
+        
+        I’m grateful that the universe conspired to have us stay at Cancio’s House, a 500-year-old traditional Goan homestay in Aldona, with its own well for drinking water, jackfruit trees for shade, and a courtyard around which three generations of the Amaral family have grown up. It was here that I first learnt about the susegad Goan life – aka the art of slowness and contentment.
+        
+        </p>
+        <h3 appBlogDirective="darkred">Hampi</h3>
+    <img src="../assets/images/hampi.jpeg" alt="" class="img2">
+   
+    <p id="desc">On my first trip to Goa as an adult, my partner and I stayed at an “offbeat” beach that had already been invaded by overtourism. That experience, filled with characterless beach shacks, multicuisine food and hordes of tourists, turned me off Goa.
+
+        Much later, I returned to experience slow travel for the first time.
+        
+        I’m grateful that the universe conspired to have us stay at Cancio’s House, a 500-year-old traditional Goan homestay in Aldona, with its own well for drinking water, jackfruit trees for shade, and a courtyard around which three generations of the Amaral family have grown up. It was here that I first learnt about the susegad Goan life – aka the art of slowness and contentment.
+        
+        </p>
+
+        <h3 appBlogDirective="darkred">Coorg</h3>
+        <img src="../assets/images/coorg.jpeg" alt="" class="img2">
+       
+        <p id="desc">On my first trip to Goa as an adult, my partner and I stayed at an “offbeat” beach that had already been invaded by overtourism. That experience, filled with characterless beach shacks, multicuisine food and hordes of tourists, turned me off Goa.
+    
+            Much later, I returned to experience slow travel for the first time.
+            
+            I’m grateful that the universe conspired to have us stay at Cancio’s House, a 500-year-old traditional Goan homestay in Aldona, with its own well for drinking water, jackfruit trees for shade, and a courtyard around which three generations of the Amaral family have grown up. It was here that I first learnt about the susegad Goan life – aka the art of slowness and contentment.
+            
+            </p>
+   </div>
+   <label for="" appBlogDirective="blue">Click on this button to know about Author</label>
+  <br>
+   <button  (click)="show()" >Click Me!</button>
+</div>
+<ng-container *ngIf="showDetails">
+
+    <h6 appBlogDirective="orange">Name:Parvathi G</h6>
+    <h6 appBlogDirective="orange">Place:Vaikom</h6>
+    <h6 appBlogDirective="orange">Age:23</h6>
+    <h6 appBlogDirective="orange">Hobbies:Cooking,Music</h6>
+
+</ng-container>
+
